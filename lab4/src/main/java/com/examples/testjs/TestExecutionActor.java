@@ -7,5 +7,7 @@ package com.examples.testjs;
 //Invocable invocable = (Invocable) engine;
 //return invocable.invokeFunction(functionName, params).toString();
 
+//После исполнения теста результат передается актору хранилищу
+
 public class TestExecutionActor {
 }
