@@ -1,6 +1,5 @@
 package com.examples.testjs;
 
-
 //актор который исполняет один тест из пакета.
 //   Для исполнения JS кода можно воспользоваться следующим примером
 //ScriptEngine engine = new ScriptEngineManager().getEngineByName("nashorn");
