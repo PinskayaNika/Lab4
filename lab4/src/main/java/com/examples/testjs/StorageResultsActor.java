@@ -11,12 +11,12 @@ public class StorageResultsActor extends AbstractActor {
     @Override
     public Receive createReceive() {
         return ReceiveBuilder.create()
-                .match(StoreResultsMessage.class, m -> {
+                .match(MessageProcessingActor.class, m -> {
                     store.put(m.getKey(), m.getValue());
                     System.out.println("receive message! " + m.toString());
                 })
                 .match(GetMessage.class, req -> sender().tell(
-                        new StoreResultsMessage(req.getKey(), store.get(req.getKey())), self())
+                        new MessageProcessingActor(req.getKey(), store.get(req.getKey())), self())
         ).build();
     }
 }
