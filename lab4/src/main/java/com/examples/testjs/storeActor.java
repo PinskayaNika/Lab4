@@ -1,4 +1,4 @@
 package com.examples.testjs;
 
-public class MainActor {
+public class storeActor {
 }
