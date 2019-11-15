@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="372f0b7c-69d4-46ea-9b2b-bf00fca05f4b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/TestJS.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/TestJS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/storeActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/StoreActor.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/lab4/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,8 +27,8 @@
       <file leaf-file-name="TestJS.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/TestJS.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
+            <state relative-caret-position="304">
+              <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -35,11 +36,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainActor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/MainActor.java">
+      <file leaf-file-name="StoreActor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/StoreActor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="38">
+              <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -104,6 +105,9 @@
         <option value="$PROJECT_DIR$/lab4/pom.xml" />
         <option value="$PROJECT_DIR$/lab4/src/main/java/RouterActor.java" />
         <option value="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/RouterActor.java" />
+        <option value="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/MainActor.java" />
+        <option value="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/storeActor.java" />
+        <option value="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/StoreActor.java" />
         <option value="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/TestJS.java" />
       </list>
     </option>
@@ -450,17 +454,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/MainActor.java">
+    <entry file="file://$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/StoreActor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="38">
+          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/TestJS.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
+        <state relative-caret-position="304">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
