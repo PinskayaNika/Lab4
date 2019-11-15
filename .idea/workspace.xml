@@ -26,8 +26,11 @@
       <file leaf-file-name="TestJS.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/TestJS.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+            <state relative-caret-position="266">
+              <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -108,8 +111,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="909" />
-    <option name="y" value="422" />
+    <option name="x" value="904" />
+    <option name="y" value="520" />
     <option name="width" value="954" />
     <option name="height" value="1059" />
   </component>
@@ -245,7 +248,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-40" y="95" width="954" height="1059" extended-state="0" />
+    <frame x="904" y="520" width="954" height="1059" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -302,6 +305,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -437,8 +443,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/TestJS.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        <state relative-caret-position="266">
+          <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
