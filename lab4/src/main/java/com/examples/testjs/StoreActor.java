@@ -23,7 +23,7 @@ public class StoreActor extends AbstractActor {
         return ReceiveBuilder.create().match(
                 FunctionPackage.class, pack -> {
                     int len = pack.getTests().length;
-                    for (int )
+                    for (int index = 0; index)
                 }
         )
     }
