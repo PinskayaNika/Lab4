@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="372f0b7c-69d4-46ea-9b2b-bf00fca05f4b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/MessageProcessingActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/MessageProcessingActor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/StoreActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/StoreActor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/TestJS.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/TestJS.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/lab4/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,11 +23,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestJS.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TestJS.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/TestJS.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="524">
+              <caret line="34" column="45" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -78,7 +77,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MessageProcessingActor.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MessageProcessingActor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/MessageProcessingActor.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="342">
@@ -133,9 +132,9 @@
         <option value="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/RouterActor.java" />
         <option value="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/MainActor.java" />
         <option value="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/storeActor.java" />
-        <option value="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/TestJS.java" />
         <option value="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/StoreActor.java" />
         <option value="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/MessageProcessingActor.java" />
+        <option value="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/TestJS.java" />
       </list>
     </option>
   </component>
@@ -494,12 +493,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/TestJS.java">
+    <entry file="file://$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/MessageProcessingActor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#431#432#0" expanded="true" />
+            <element signature="e#469#470#0" expanded="true" />
+            <element signature="e#498#499#0" expanded="true" />
+            <element signature="e#526#527#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -514,15 +516,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/MessageProcessingActor.java">
+    <entry file="file://$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/TestJS.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="524">
+          <caret line="34" column="45" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
           <folding>
-            <element signature="e#431#432#0" expanded="true" />
-            <element signature="e#469#470#0" expanded="true" />
-            <element signature="e#498#499#0" expanded="true" />
-            <element signature="e#526#527#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
