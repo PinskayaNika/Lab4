@@ -1,8 +1,9 @@
 package com.examples.testjs;
-
+int
 import akka.actor.AbstractActor;
 import akka.actor.ActorRef;
 import akka.actor.Props;
+import akka.japi.pf.ReceiveBuilder;
 import akka.routing.RoundRobinPool;
 
 public class StoreActor extends AbstractActor {
@@ -13,6 +14,17 @@ public class StoreActor extends AbstractActor {
 
     public StoreActor() {
         executors = getContext().actorOf(new RoundRobinPool(NUM_ROUND_ROBIN_POOL)
-                .props(Props.create(JSExecActor.class)))
+                .props(Props.create(JSExecActor.class)));
+        storage = getContext().actorOf(Props.create(StorageActor.class));
+    }
+
+    @Override
+    public Receive createReceive() {
+        return ReceiveBuilder.create().match(
+                FunctionPackage.class, pack -> {
+                    int len = pack.getTests().length;
+                    for (int )
+                }
+        )
     }
 }
