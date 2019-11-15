@@ -14,7 +14,7 @@ public class TestJS {
         final Http http = Http.get(system);
         final ActorMaterializer materializer = ActorMaterializer.create(system);
 
-        
+
 
 
         storeActor.tell(
