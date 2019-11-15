@@ -13,6 +13,6 @@ public class StoreActor extends AbstractActor {
 
     public StoreActor() {
         executors = getContext().actorOf(new RoundRobinPool(NUM_ROUND_ROBIN_POOL)
-                .props(Props.create(JSExecActor.)))
+                .props(Props.create(JSExecActor.class)))
     }
 }
