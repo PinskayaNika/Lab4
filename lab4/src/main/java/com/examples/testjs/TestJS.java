@@ -1,5 +1,7 @@
 package com.examples.testjs;
 
 public class TestJS {
-    public static 
+    public static void main(String[] args) throws Exception {
+        
+    }
 }
