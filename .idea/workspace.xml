@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="372f0b7c-69d4-46ea-9b2b-bf00fca05f4b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/TestJS.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/TestJS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/storeActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/StoreActor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/StoreActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/StoreActor.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/lab4/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,11 +23,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestJS.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestJS.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/TestJS.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+            <state relative-caret-position="342">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -36,11 +35,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StoreActor.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="StoreActor.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/StoreActor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+            <state relative-caret-position="285">
+              <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -107,8 +109,8 @@
         <option value="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/RouterActor.java" />
         <option value="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/MainActor.java" />
         <option value="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/storeActor.java" />
-        <option value="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/StoreActor.java" />
         <option value="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/TestJS.java" />
+        <option value="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/StoreActor.java" />
       </list>
     </option>
   </component>
@@ -454,17 +456,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/StoreActor.java">
+    <entry file="file://$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/TestJS.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+        <state relative-caret-position="342">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/TestJS.java">
+    <entry file="file://$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/StoreActor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+        <state relative-caret-position="285">
+          <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
