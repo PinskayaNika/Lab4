@@ -6,7 +6,7 @@ import akka.actor.Props;
 
 public class TestJS {
     public static void main(String[] args) throws Exception {
-        ActorSystem system = ActorSystem.create(ROUTES);
+        ActorSystem system = ActorSystem.create("routes");
         ActorRef storeActor = system.actorOf(Props.create(StoreActor.class)
         );
         storeActor.tell(
