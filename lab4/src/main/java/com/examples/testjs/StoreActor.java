@@ -13,6 +13,7 @@ public class StoreActor extends AbstractActor {
     private final ActorRef storage;  //может быть только 1
 
     public StoreActor() {
+        //исполняет js CODE
         executors = getContext().actorOf(new RoundRobinPool(NUM_ROUND_ROBIN_POOL)
                 .props(Props.create(JSExecActor.class)));
         storage = getContext().actorOf(Props.create(StorageResultsActor.class));

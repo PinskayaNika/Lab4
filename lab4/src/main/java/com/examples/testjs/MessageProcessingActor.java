@@ -6,4 +6,13 @@ package com.examples.testjs;
 //   Сообщение с запросом результата теста → отвечает сообщением с     результатом всех тестов для заданного  packageId
 
 public class MessageProcessingActor {
+    private int packageId;
+
+    public MessageProcessingActor(int packageId) {
+        this.packageId = packageId;
+    }
+
+    public int getPackageId() {
+        return packageId;
+    }
 }
