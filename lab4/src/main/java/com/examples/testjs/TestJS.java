@@ -10,6 +10,7 @@ import akka.http.javadsl.Http;
 import akka.http.javadsl.ServerBinding;
 import akka.http.javadsl.model.HttpRequest;
 import akka.http.javadsl.model.HttpResponse;
+import akka.http.javadsl.server.Route;
 import akka.stream.ActorMaterializer;
 import akka.stream.javadsl.Flow;
 
@@ -27,7 +28,7 @@ public class TestJS {
         JSAkkaTester app = new JSAkkaTester();
 
         final Flow<HttpRequest, HttpResponse, NotUsed> routeFlow =
-                app.JSTesterRoute().flow(system, materializer);
+                app.jsTesterRoute().flow(system, materializer);
         final CompletionStage<ServerBinding> binding = http.bindAndHandle(
                 routeFlow,
                 ConnectHttp.toHost("localhost", 8080),
@@ -43,20 +44,25 @@ public class TestJS {
 
 
 
-        storeActor.tell(
-                new StoreActor.StoreMessage("test", "test"),
-                ActorRef.noSender()
-        );
+//        storeActor.tell(
+//                new StoreActor.StoreMessage("test", "test"),
+//                ActorRef.noSender()
+//        );
+//
+//
+//        System.out.println("");
+//    }
 
 
-        System.out.println("");
-    }
-
-
-    private
-    return concat(
-            get(
-            () -> parameter(PACKAGE_ID)
+    private Route jsTesterRoute() {
+        get (
+                () -> parameter(PAKAGE_ID, (pachageId) ->
+                {
+                }
+        })
+        ),
+    post (
+            () -> entyty()
     )
     )
 }
