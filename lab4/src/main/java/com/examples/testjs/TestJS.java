@@ -13,6 +13,7 @@ import akka.http.javadsl.model.HttpResponse;
 import akka.http.javadsl.server.Route;
 import akka.stream.ActorMaterializer;
 import akka.stream.javadsl.Flow;
+import org.omg.CORBA.TIMEOUT;
 
 import java.util.concurrent.CompletionStage;
 
@@ -20,7 +21,8 @@ public class TestJS {
     static ActorRef storeActor;
     private static final String LOCALHOST = "localhost:";
     private static final String SERVER_INFO = "Server online at http://localhost:8080/\\nPress RETURN to stop...";
-    private static final String SERVER_INFO = "8080;
+    private static final int SERVER_PORT = 8080;
+    TIMEOUT_MILLsERVER_PORT = 8080;
 
     public static void main(String[] args) throws Exception {
         //Инициализация сервера
