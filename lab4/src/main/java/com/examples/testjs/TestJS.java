@@ -19,7 +19,8 @@ import java.util.concurrent.CompletionStage;
 public class TestJS {
     static ActorRef storeActor;
     private static final String LOCALHOST = "localhost:";
-    
+    private static final String SERVER_INFO = "Server online at http://localhost:8080/\\nPress RETURN to stop...";
+    private static final String SERVER_INFO = "8080;
 
     public static void main(String[] args) throws Exception {
         //Инициализация сервера
@@ -35,11 +36,11 @@ public class TestJS {
                 app.jsTesterRoute().flow(system, materializer);
         final CompletionStage<ServerBinding> binding = http.bindAndHandle(
                 routeFlow,
-                ConnectHttp.toHost("localhost", 8080),
+                ConnectHttp.toHost(LOCALHOST, ),
                 materializer
                 );
 
-        System.out.println("Server online at http://localhost:8080/\\nPress RETURN to stop...");
+        System.out.println(SERVER_INFO);
         System.in.read();
 
         binding
