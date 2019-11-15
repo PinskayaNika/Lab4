@@ -22,12 +22,12 @@ public class TestJS {
     private static final String LOCALHOST = "localhost:";
     private static final String SERVER_INFO = "Server online at http://localhost:8080/\\nPress RETURN to stop...";
     private static final int SERVER_PORT = 8080;
-    TIMEOUT_MILLsERVER_PORT = 8080;
+    private static final int TIMEOUT_MILLIS = 5000;
 
     public static void main(String[] args) throws Exception {
         //Инициализация сервера
         ActorSystem system = ActorSystem.create("routes");
-        ActorRef storeActor = system.actorOf(Props.create(StoreActor.class));
+        storeActor = system.actorOf(Props.create(StoreActor.class));
 
         final Http http = Http.get(system);
         final ActorMaterializer materializer = ActorMaterializer.create(system);
@@ -38,7 +38,7 @@ public class TestJS {
                 app.jsTesterRoute().flow(system, materializer);
         final CompletionStage<ServerBinding> binding = http.bindAndHandle(
                 routeFlow,
-                ConnectHttp.toHost(LOCALHOST, ),
+                ConnectHttp.toHost(LOCALHOST, SERVER_PORT),
                 materializer
                 );
 
