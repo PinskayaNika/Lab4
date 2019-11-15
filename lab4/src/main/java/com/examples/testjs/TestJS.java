@@ -17,6 +17,10 @@ import akka.stream.javadsl.Flow;
 import java.util.concurrent.CompletionStage;
 
 public class TestJS {
+    static ActorRef storeActor;
+    private static final String LOCALHOST = "localhost:";
+    
+
     public static void main(String[] args) throws Exception {
         //Инициализация сервера
         ActorSystem system = ActorSystem.create("routes");

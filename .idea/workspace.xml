@@ -17,8 +17,8 @@
       <file leaf-file-name="TestJS.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/TestJS.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
+            <state relative-caret-position="285">
+              <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -541,8 +541,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/TestJS.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
+        <state relative-caret-position="285">
+          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
