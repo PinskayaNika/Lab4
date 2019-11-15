@@ -1,5 +1,5 @@
 package com.examples.testjs;
-int
+
 import akka.actor.AbstractActor;
 import akka.actor.ActorRef;
 import akka.actor.Props;
@@ -15,7 +15,7 @@ public class StoreActor extends AbstractActor {
     public StoreActor() {
         executors = getContext().actorOf(new RoundRobinPool(NUM_ROUND_ROBIN_POOL)
                 .props(Props.create(JSExecActor.class)));
-        storage = getContext().actorOf(Props.create(StorageActor.class));
+        storage = getContext().actorOf(Props.create(StorageResultsActor.class));
     }
 
     @Override
@@ -23,8 +23,10 @@ public class StoreActor extends AbstractActor {
         return ReceiveBuilder.create().match(
                 FunctionPackage.class, pack -> {
                     int len = pack.getTests().length;
-                    for (int index = 0; index)
-                }
-        )
+                    for (int index = 0; index < len; index++) {
+                        executors.tell(new ExecuteMSG(index, pack), storage);
+                    }
+                })
+                .match(MessageProcessingActor.class, req -> storage.tell(req, sender())).build();
     }
 }
