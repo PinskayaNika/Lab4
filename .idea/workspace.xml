@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="372f0b7c-69d4-46ea-9b2b-bf00fca05f4b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/MainActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/MainActor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/StorageResultsActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/StorageResultsActor.java" afterDir="false" />
-    </list>
+    <list default="true" id="372f0b7c-69d4-46ea-9b2b-bf00fca05f4b" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/lab4/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,8 +15,8 @@
       <file leaf-file-name="TestJS.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/TestJS.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+            <state relative-caret-position="1090">
+              <caret line="74" column="71" selection-start-line="74" selection-start-column="71" selection-end-line="74" selection-end-column="71" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -27,11 +24,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JSAkkaTester.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/JSAkkaTester.java">
+      <file leaf-file-name="StoreActor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/StoreActor.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="38">
-              <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -39,8 +36,8 @@
       <file leaf-file-name="MainActor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/MainActor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="27" column="56" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="56" />
+            <state relative-caret-position="418">
+              <caret line="22" column="36" lean-forward="true" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -79,7 +76,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StorageResultsActor.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="StorageResultsActor.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/StorageResultsActor.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="399">
@@ -165,13 +162,13 @@
         <option value="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/RouterActor.java" />
         <option value="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/storeActor.java" />
         <option value="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/MessageProcessingActor.java" />
-        <option value="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/StoreActor.java" />
         <option value="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/JSTesterRoute.java" />
-        <option value="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/TestJS.java" />
         <option value="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/FunctionPackage.java" />
-        <option value="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/MainActor.java" />
         <option value="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/ExecuteMesage.java" />
         <option value="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/StorageResultsActor.java" />
+        <option value="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/StoreActor.java" />
+        <option value="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/MainActor.java" />
+        <option value="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/TestJS.java" />
       </list>
     </option>
   </component>
@@ -339,8 +336,8 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.3291536" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.4263323" />
       <window_info id="Learn" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -387,7 +384,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/JSAkkaTester.java">
+    <entry file="file://$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/StoreActor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
@@ -617,16 +614,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/MainActor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="27" column="56" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/ExecuteMesage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -640,16 +627,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/StorageResultsActor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/JSExecActor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -657,20 +634,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/TestJS.java">
+    <entry file="file://$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/MainActor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+        <state relative-caret-position="418">
+          <caret line="22" column="36" lean-forward="true" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/JSAkkaTester.java">
+    <entry file="file://$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/StoreActor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/TestJS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1090">
+          <caret line="74" column="71" selection-start-line="74" selection-start-column="71" selection-end-line="74" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/StorageResultsActor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
