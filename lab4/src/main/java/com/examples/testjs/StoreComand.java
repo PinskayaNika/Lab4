@@ -1,5 +1,5 @@
 package com.examples.testjs;
 
-public class StoreActor {
+public class StoreComand{
 
 }

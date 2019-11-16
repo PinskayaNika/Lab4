@@ -1,4 +1,5 @@
 package com.examples.testjs;
 
-public class Storemessage {
+public class StoreMessage {
+    
 }
