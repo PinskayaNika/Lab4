@@ -25,7 +25,7 @@ public class MainActor extends AbstractActor {
                 FunctionPackage.class, pack -> {
                     int len = pack.getTests().length;
                     for (int index = 0; index < len; index++) {
-                        executors.tell(new ExecuteMesage(index, pack), storage);
+                        executors.tell(new ExecuteMessage(index, pack), storage);
                     }
                 })
                 .match(MessageProcessingActor.class, req -> storage.tell(req, sender())).build();
