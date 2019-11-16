@@ -69,14 +69,13 @@ public class TestJS {
             return concat(
                     get(
                             () -> parameter(PAKAGE_ID, (pachageId) ->
-                            {
-                                Future<Object> result = Patterns.ask(mainActor,
-                                        new GetMessage(Integer.parseInt(packageId)),
-                                        TIMEOUT_MILLIS);
-                                return completeOKWithFuture(result, Jackson.marshaller());
-
-
-                            })
+                                    {
+                                        Future<Object> result = Patterns.ask(mainActor,
+                                                new GetMessage(Integer.parseInt(packageId)),
+                                                TIMEOUT_MILLIS);
+                                        return completeOKWithFuture(result, Jackson.marshaller());
+                                    }
+                            )
                     ),
                     post(
                             () -> entity(Jackson.unmarshaller(FunctionPackage.class),
