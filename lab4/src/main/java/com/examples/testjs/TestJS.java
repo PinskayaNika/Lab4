@@ -33,7 +33,7 @@ public class TestJS {
     public static void main(String[] args) throws Exception {
         //Инициализация сервера
         ActorSystem system = ActorSystem.create("routes");
-        mainActor = system.actorOf(Props.create(StoreActor.class));
+        mainActor = system.actorOf(Props.create(MainActor.class));
 
         final Http http = Http.get(system);
         final ActorMaterializer materializer = ActorMaterializer.create(system);
