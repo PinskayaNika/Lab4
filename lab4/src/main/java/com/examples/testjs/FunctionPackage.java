@@ -38,5 +38,11 @@ public class FunctionPackage {
         return functionName;
     }
 
-    public 
+    public Test[] getTests() {
+        return tests;
+    }
+
+    public Test getTests(int i) {
+        return tests[i];
+    }
 }
