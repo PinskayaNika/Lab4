@@ -12,46 +12,48 @@ package com.examples.testjs;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class TestExecutionActor(){
+public class TestExecutionActor {
 
-private static final String PACKAGE_ID="packageId";
-private static final String JS_SCRIPT="Script";
-private static final String TEST_NAME="testName";
-private static final String TESTS="functionName";
+    private static final String EXPECTED_RESULT "expectedResult"
+    private static final String PARAMS = "params";
+    private static final String TEST_NAME = "testName";
+    private static final String EMPTY_RESULT = "NONE";
+    private static final String EMPTY_RESULT = "NONE";
 
-private final int packageId;
-private final String jsScript;
-private final String functionName;
-private final Test[]tests;
 
-@JsonCreator
-public TestExecutionActor(@JsonProperty(PACKAGE_ID) String packageId,
-@JsonProperty(JS_SCRIPT) String jsScript,
-@JsonProperty(FUNCTION_NAME) String functionName,
-@JsonProperty(TESTS) Test[]tests){
-        this.packageId=Integer.parseInt(packageId);
-        this.jsScript=jsScript;
-        this.functionName=functionName;
-        this.tests=tests;
-        }
+    private final int packageId;
+    private final String jsScript;
+    private final String functionName;
+    private final Test[] tests;
 
-public String getJsScript(){
+    @JsonCreator
+    public TestExecutionActor(@JsonProperty(PACKAGE_ID) String packageId,
+                              @JsonProperty(JS_SCRIPT) String jsScript,
+                              @JsonProperty(FUNCTION_NAME) String functionName,
+                              @JsonProperty(TESTS) Test[] tests) {
+        this.packageId = Integer.parseInt(packageId);
+        this.jsScript = jsScript;
+        this.functionName = functionName;
+        this.tests = tests;
+    }
+
+    public String getJsScript() {
         return jsScript;
-        }
+    }
 
-public int getPackageId(){
+    public int getPackageId() {
         return packageId;
-        }
+    }
 
-public String getFunctionName(){
+    public String getFunctionName() {
         return functionName;
-        }
+    }
 
-public TestExecutionActor[]getTests(){
+    public TestExecutionActor[] getTests() {
         return tests;
-        }
+    }
 
-public TestExecutionActor getTests(int i){
+    public TestExecutionActor getTests(int i) {
         return tests[i];
-        }
-        }
+    }
+}
