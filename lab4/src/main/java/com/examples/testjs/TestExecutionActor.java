@@ -16,7 +16,7 @@ public class TestExecutionActor(){
 
 private static final String PACKAGE_ID="packageId";
 private static final String JS_SCRIPT="Script";
-private static final String FUNCTION_NAME="functionName";
+private static final String TEST_NAME="testName";
 private static final String TESTS="functionName";
 
 private final int packageId;
