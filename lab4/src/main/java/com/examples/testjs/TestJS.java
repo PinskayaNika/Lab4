@@ -62,31 +62,31 @@ public class TestJS {
 //
 //
 //        System.out.println("");
-//    }
-
-
-        private Route jsTesterRoute () {
-            return concat(
-                    get(
-                            () -> parameter(PAKAGE_ID, (pachageId) ->
-                                    {
-                                        Future<Object> result = Patterns.ask(mainActor,
-                                                new GetMessage(Integer.parseInt(packageId)),
-                                                TIMEOUT_MILLIS);
-                                        return completeOKWithFuture(result, Jackson.marshaller());
-                                    }
-                            )
-                    ),
-                    post(
-                            () -> entity(Jackson.unmarshaller(FunctionPackage.class),
-                                    msg -> {
-                                        mainActor.tell(msg, ActorRef.noSender());
-                                        return complete(POST_MESSAGE);
-
-                                    }
-                            )
-                    )
-            );
-
-        }
     }
+
+
+    private Route jsTesterRoute() {
+        return concat(
+                get(
+                        () -> parameter(PAKAGE_ID, (pachageId) ->
+                                {
+                                    Future<Object> result = Patterns.ask(mainActor,
+                                            new GetMessage(Integer.parseInt(packageId)),
+                                            TIMEOUT_MILLIS);
+                                    return completeOKWithFuture(result, Jackson.marshaller());
+                                }
+                        )
+                ),
+                post(
+                        () -> entity(Jackson.unmarshaller(FunctionPackage.class),
+                                msg -> {
+                                    mainActor.tell(msg, ActorRef.noSender());
+                                    return complete(POST_MESSAGE);
+
+                                }
+                        )
+                )
+        );
+
+    }
+}
