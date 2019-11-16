@@ -38,11 +38,11 @@ public class FunctionPackage {
         return functionName;
     }
 
-    public Test[] getTests() {
+    public TestExecutionActor[] getTests() {
         return tests;
     }
 
-    public Test getTests(int i) {
+    public TestExecutionActor getTests(int i) {
         return tests[i];
     }
 }

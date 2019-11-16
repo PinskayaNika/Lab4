@@ -10,6 +10,48 @@ package com.examples.testjs;
 //После исполнения теста результат передается актору хранилищу
 
 import com.fasterxml.jackson.annotation.JsonCreator;
-    }
+import com.fasterxml.jackson.annotation.JsonProperty;
 
+public class TestExecutionActor(){
 
+private static final String PACKAGE_ID="packageId";
+private static final String JS_SCRIPT="Script";
+private static final String FUNCTION_NAME="functionName";
+private static final String TESTS="functionName";
+
+private final int packageId;
+private final String jsScript;
+private final String functionName;
+private final Test[]tests;
+
+@JsonCreator
+public TestExecutionActor(@JsonProperty(PACKAGE_ID) String packageId,
+@JsonProperty(JS_SCRIPT) String jsScript,
+@JsonProperty(FUNCTION_NAME) String functionName,
+@JsonProperty(TESTS) Test[]tests){
+        this.packageId=Integer.parseInt(packageId);
+        this.jsScript=jsScript;
+        this.functionName=functionName;
+        this.tests=tests;
+        }
+
+public String getJsScript(){
+        return jsScript;
+        }
+
+public int getPackageId(){
+        return packageId;
+        }
+
+public String getFunctionName(){
+        return functionName;
+        }
+
+public TestExecutionActor[]getTests(){
+        return tests;
+        }
+
+public TestExecutionActor getTests(int i){
+        return tests[i];
+        }
+        }
