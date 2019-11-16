@@ -21,13 +21,14 @@ import java.util.concurrent.CompletionStage;
 import java.util.concurrent.Future;
 
 public class TestJS {
-    static ActorRef storeActor;
     private static final String LOCALHOST = "localhost:";
     private static final String SERVER_INFO = "Server online at http://localhost:8080/\\nPress RETURN to stop...";
     private static final String PACKAGE_ID = "packageId";
     private static final String POST_MESSAGE = "Message was posted";
     private static final int SERVER_PORT = 8080;
     private static final int TIMEOUT_MILLIS = 5000;
+
+    static ActorRef storeActor;
 
     public static void main(String[] args) throws Exception {
         //Инициализация сервера
