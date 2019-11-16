@@ -28,17 +28,17 @@ public class TestJS {
     private static final int SERVER_PORT = 8080;
     private static final int TIMEOUT_MILLIS = 5000;
 
-    static ActorRef storeActor;
+    static ActorRef mainActor;
 
     public static void main(String[] args) throws Exception {
         //Инициализация сервера
         ActorSystem system = ActorSystem.create("routes");
-        storeActor = system.actorOf(Props.create(StoreActor.class));
+        mainActor = system.actorOf(Props.create(StoreActor.class));
 
         final Http http = Http.get(system);
         final ActorMaterializer materializer = ActorMaterializer.create(system);
 
-        JSAkkaTester app = new JSAkkaTester();
+        TestJS app = new TestJS();
 
         final Flow<HttpRequest, HttpResponse, NotUsed> routeFlow =
                 app.jsTesterRoute().flow(system, materializer);
@@ -57,7 +57,7 @@ public class TestJS {
 
 
 //        storeActor.tell(
-//                new StoreActor.StoreMessage("test", "test"),
+//                new MainActor.StoreMessage("test", "test"),
 //                ActorRef.noSender()
 //        );
 //
@@ -72,7 +72,7 @@ public class TestJS {
                         () -> parameter(PAKAGE_ID, (pachageId) ->
                                 {
                                     Future<Object> result = Patterns.ask(mainActor,
-                                            new GetMessage(Integer.parseInt(packageId)),
+                                            new MessageProcessingActor(Integer.parseInt(packageId)),
                                             TIMEOUT_MILLIS);
                                     return completeOKWithFuture(result, Jackson.marshaller());
                                 }
