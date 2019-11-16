@@ -45,7 +45,7 @@ public class TestJS {
                 routeFlow,
                 ConnectHttp.toHost(LOCALHOST, SERVER_PORT),
                 materializer
-                );
+        );
 
         System.out.println(SERVER_INFO);
         System.in.read();
@@ -53,7 +53,6 @@ public class TestJS {
         binding
                 .thenCompose(ServerBinding::unbind)
                 .thenAccept(unbound -> system.terminate());
-
 
 
 //        storeActor.tell(
@@ -66,21 +65,29 @@ public class TestJS {
 //    }
 
 
-    private Route jsTesterRoute() {
-        return concat(
-        get (
-                () -> parameter(PAKAGE_ID, (pachageId) ->
-                {
-                    Future<Object> result = Patterns.ask(mainActor,
-                            new GetMessage(Integer.parseInt(pachageId)),
-                            TIMEOUT_MILLIS);
-                    return completeOKWithFuture(result, Jackson.marshaller());
-                }
-                }
-        })
-        ),
-    post (
-            () -> entyty()
-    )
-    )
-}
+        private Route jsTesterRoute () {
+            return concat(
+                    get(
+                            () -> parameter(PAKAGE_ID, (pachageId) ->
+                            {
+                                Future<Object> result = Patterns.ask(mainActor,
+                                        new GetMessage(Integer.parseInt(packageId)),
+                                        TIMEOUT_MILLIS);
+                                return completeOKWithFuture(result, Jackson.marshaller());
+
+
+                            })
+                    ),
+                    post(
+                            () -> entity(Jackson.unmarshaller(FunctionPackage.class),
+                                    msg -> {
+                                        mainActor.tell(msg, ActorRef.noSender());
+                                        return complete(POST_MESSAGE);
+
+                                    }
+                            )
+                    )
+            );
+
+        }
+    }
