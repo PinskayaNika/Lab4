@@ -71,7 +71,7 @@ public class TestJS {
         get (
                 () -> parameter(PAKAGE_ID, (pachageId) ->
                 {
-                    Future<Object> result = Patterns.ask(MainActor,
+                    Future<Object> result = Patterns.ask(mainActor,
                             new GetMessage(Integer.parseInt(pachageId)),
                             TIMEOUT_MILLIS);
                     return completeOKWithFuture(result, Jackson.marshaller());
