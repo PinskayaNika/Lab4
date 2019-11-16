@@ -22,7 +22,7 @@ public class JSExecActor extends AbstractActor {
                     Pair<Integer, FunctionPackage> msg = m.getMsg();
                     int index = msg.getKey();
                     FunctionPackage functionPackage = msg.getValue();
-                    Test test = functionPackage.getTests()[index];
+                    TestExecutionActor test = functionPackage.getTests()[index];
                     ScriptEngine engine = new ScriptEngineManager().getEngineByName(JS_ENGINE);
                     try {
                         engine.eval(functionPackage.getJsScript());
@@ -35,7 +35,7 @@ public class JSExecActor extends AbstractActor {
                             test.getParams()).toString();
 
                     String check = WRONG_ANSWER;
-                    if res.equals(test.getExpectedResult()) {
+                    if (res.equals(test.getExpectedResult())) {
                         check = CORRECT_ANSWER;
                     }
 
