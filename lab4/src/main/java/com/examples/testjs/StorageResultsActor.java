@@ -15,7 +15,7 @@ public class StorageResultsActor extends AbstractActor {
                     store.put(m.getKey(), m.getValue());
                     System.out.println("receive message! " + m.toString());
                 })
-                .match(GetMessage.class, req -> sender().tell(
+                .match(MessageProcessingActor.class, req -> sender().tell(
                         new MessageProcessingActor(req.getKey(), store.get(req.getKey())), self())
         ).build();
     }

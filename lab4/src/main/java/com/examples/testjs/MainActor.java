@@ -25,7 +25,7 @@ public class StoreActor extends AbstractActor {
                 FunctionPackage.class, pack -> {
                     int len = pack.getTests().length;
                     for (int index = 0; index < len; index++) {
-                        executors.tell(new ExecuteMSG(index, pack), storage);
+                        executors.tell(new ExecuteMesage(index, pack), storage);
                     }
                 })
                 .match(MessageProcessingActor.class, req -> storage.tell(req, sender())).build();
