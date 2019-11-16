@@ -2,10 +2,10 @@ package com.examples.testjs;
 
 import javafx.util.Pair;
 
-public class ExecuteMesage {
+public class ExecuteMessage {
     private Pair<Integer, FunctionPackage> msg;
 
-    public ExecuteMesage(int a, FunctionPackage functionPackage) {
+    public ExecuteMessage(int a, FunctionPackage functionPackage) {
         this.msg = new Pair<>(a, functionPackage);
     }
 
