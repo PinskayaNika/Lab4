@@ -23,12 +23,14 @@ public class StorageResultsActor extends AbstractActor {
                 .match(StoreComand.class, msg -> {
                     if (store.containsKey(msg.getPackageId())) {
                         ArrayList<StoreMessage> tests = store.get(msg.getPackageId());
-                        tests.add(msg.getStireMessage());
+                        tests.add(msg.getStorageMessage());
                         store.put(msg.getPackageId(), tests);
                     } else {
-                    sender().tell(
-                                new MessageProcessingActor(msg.getKey(), store.get(req.getKey())), self())
+                        ArrayList<StoreMessage> tests = new ArrayList<>();
+                        tests.add(msg.getStorageMessage());
+                        store.put(msg.getPackageId(), tests);
                     }
+                }
         ).build();
     }
 }
