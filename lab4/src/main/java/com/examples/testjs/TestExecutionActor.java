@@ -9,6 +9,7 @@ package com.examples.testjs;
 
 //После исполнения теста результат передается актору хранилищу
 
-public class TestExecutionActor {
-    
-}
+import com.fasterxml.jackson.annotation.JsonCreator;
+    }
+
+
