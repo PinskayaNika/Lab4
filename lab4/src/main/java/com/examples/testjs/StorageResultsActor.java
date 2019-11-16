@@ -6,7 +6,6 @@ import akka.japi.pf.ReceiveBuilder;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Map;
 
 public class StorageResultsActor extends AbstractActor {
     private HashMap<Integer, ArrayList<StoreMessage>> store = new HashMap<>();
@@ -20,7 +19,7 @@ public class StorageResultsActor extends AbstractActor {
                             ActorRef.noSender()
                     )
                 )
-                .match(StoreComand.class, msg -> {
+                .match(StoreCommand.class, msg -> {
                     if (store.containsKey(msg.getPackageId())) {
                         ArrayList<StoreMessage> tests = store.get(msg.getPackageId());
                         tests.add(msg.getStorageMessage());

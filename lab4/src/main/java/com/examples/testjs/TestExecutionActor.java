@@ -10,4 +10,5 @@ package com.examples.testjs;
 //После исполнения теста результат передается актору хранилищу
 
 public class TestExecutionActor {
+    
 }

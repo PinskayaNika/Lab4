@@ -9,9 +9,8 @@ import javax.script.Invocable;
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
 import javax.script.ScriptException;
-import java.util.ArrayList;
 
-public class JSExecActor extends AbstractActor{
+public class JSExecActor extends AbstractActor {
     private static final String JS_ENGINE = "nashorn";
     private static final String WRONG_ANSWER = "WRONG ANSWER!";
     private static final String CORRECT_ANSWER = "CORRECT ANSWER!";
@@ -35,22 +34,18 @@ public class JSExecActor extends AbstractActor{
                     String res = invocable.invokeFunction(functionPackage.getFunctionName(),
                             test.getParams()).toString();
 
-                        getSender().tell(
-                                store.get(m.getPackageId()).toArray(),
-                                ActorRef.noSender()
-                        )
-                )
-                .match(StoreComand.class, msg -> {
-                            if (store.containsKey(msg.getPackageId())) {
-                                ArrayList<StoreMessage> tests = store.get(msg.getPackageId());
-                                tests.add(msg.getStorageMessage());
-                                store.put(msg.getPackageId(), tests);
-                            } else {
-                                ArrayList<StoreMessage> tests = new ArrayList<>();
-                                tests.add(msg.getStorageMessage());
-                                store.put(msg.getPackageId(), tests);
-                            }
-                        }
-                ).build();
+                    String check = WRONG_ANSWER;
+                    if res.equals(test.getExpectedResult()) {
+                        check = CORRECT_ANSWER;
+                    }
+
+                    StoreMessage storeMessage = new StoreMessage(
+                            res, test.getExpectedResult(), check,
+                            test.getParams(), test.getTestName()
+                    );
+                    StoreCommand storeCommand = new StoreCommand(functionPackage.getPackageId(),
+                            storeMessage);
+                    getSender().tell(storeCommand, ActorRef.noSender());
+                }).build();
     }
 }
