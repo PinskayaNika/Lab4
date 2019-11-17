@@ -14,21 +14,21 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class TestExecutionActor {
 
-    private static final String EXPECTED_RESULT "expectedResult"
+    private static final String EXPECTED_RESULT = "expectedResult";
     private static final String PARAMS = "params";
     private static final String TEST_NAME = "testName";
     private static final String EMPTY_RESULT = "NONE";
-    private static final String EMPTY_RESULT = "NONE";
+    private static final String EMPTY_CHECKER = "NOT READY YET";
 
 
     private final int packageId;
     private final String jsScript;
     private final String functionName;
-    private final Test[] tests;
+    private final TestExecutionActor[] tests;
 
     @JsonCreator
-    public TestExecutionActor(@JsonProperty(PACKAGE_ID) String packageId,
-                              @JsonProperty(JS_SCRIPT) String jsScript,
+    public TestExecutionActor(@JsonProperty(TEST_NAME) String packageId,
+                              @JsonProperty(EXPECTED_RESULT) String jsScript,
                               @JsonProperty(FUNCTION_NAME) String functionName,
                               @JsonProperty(TESTS) Test[] tests) {
         this.packageId = Integer.parseInt(packageId);
