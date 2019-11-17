@@ -70,7 +70,7 @@ public class TestJS extends AllDirectives {
     private Route jsTesterRoute() {
         return concat(
                 get(
-                        () -> parameter(PACKAGE_ID, (pachageId) ->
+                        () -> parameter(PACKAGE_ID, (packageId) ->
                                 {
                                     Future<Object> result = Patterns.ask(mainActor,
                                             new MessageProcessingActor(Integer.parseInt(packageId)),
