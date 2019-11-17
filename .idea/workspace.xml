@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="372f0b7c-69d4-46ea-9b2b-bf00fca05f4b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/TestExecutionActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/TestExecutionActor.java" afterDir="false" />
-    </list>
+    <list default="true" id="372f0b7c-69d4-46ea-9b2b-bf00fca05f4b" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/lab4/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -224,7 +222,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="897" />
     <option name="y" value="95" />
     <option name="width" value="954" />
@@ -362,7 +360,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="897" y="95" width="954" height="1059" extended-state="1" />
+    <frame x="897" y="95" width="954" height="1059" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
