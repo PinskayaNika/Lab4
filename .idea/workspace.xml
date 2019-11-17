@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="372f0b7c-69d4-46ea-9b2b-bf00fca05f4b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/RouterActor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/TestJS.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/TestJS.java" afterDir="false" />
-    </list>
+    <list default="true" id="372f0b7c-69d4-46ea-9b2b-bf00fca05f4b" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/lab4/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,8 +15,8 @@
       <file leaf-file-name="TestJS.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/TestJS.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="96">
+              <caret line="70" column="5" lean-forward="true" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -177,7 +174,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="908" />
     <option name="y" value="25" />
     <option name="width" value="1012" />
@@ -315,7 +312,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="908" y="25" width="1012" height="1129" extended-state="0" />
+    <frame x="908" y="25" width="1012" height="1129" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -665,8 +662,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/TestJS.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="96">
+          <caret line="70" column="5" lean-forward="true" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
