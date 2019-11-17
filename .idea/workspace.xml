@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="372f0b7c-69d4-46ea-9b2b-bf00fca05f4b" name="Default" comment="" />
+    <list default="true" id="372f0b7c-69d4-46ea-9b2b-bf00fca05f4b" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/TestExecutionActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/TestExecutionActor.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/lab4/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -136,20 +138,18 @@
       <file leaf-file-name="TestExecutionActor.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/TestExecutionActor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="58" column="1" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
+            <state relative-caret-position="458">
+              <caret line="57" column="4" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1506#1507#0" expanded="true" />
+                <element signature="e#1538#1539#0" expanded="true" />
+                <element signature="e#1586#1587#0" expanded="true" />
+                <element signature="e#1624#1625#0" expanded="true" />
                 <element signature="e#1499#1500#0" expanded="true" />
-                <element signature="e#1530#1531#0" expanded="true" />
-                <element signature="e#1563#1564#0" expanded="true" />
-                <element signature="e#1595#1596#0" expanded="true" />
-                <element signature="e#1634#1635#0" expanded="true" />
-                <element signature="e#1669#1670#0" expanded="true" />
-                <element signature="e#1715#1716#0" expanded="true" />
-                <element signature="e#1743#1744#0" expanded="true" />
-                <element signature="e#1792#1793#0" expanded="true" />
-                <element signature="e#1823#1824#0" expanded="true" />
+                <element signature="e#1528#1529#0" expanded="true" />
+                <element signature="e#1732#1733#0" expanded="true" />
+                <element signature="e#1761#1762#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -742,20 +742,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/TestExecutionActor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="58" column="1" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
+        <state relative-caret-position="458">
+          <caret line="57" column="4" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1506#1507#0" expanded="true" />
+            <element signature="e#1538#1539#0" expanded="true" />
+            <element signature="e#1586#1587#0" expanded="true" />
+            <element signature="e#1624#1625#0" expanded="true" />
             <element signature="e#1499#1500#0" expanded="true" />
-            <element signature="e#1530#1531#0" expanded="true" />
-            <element signature="e#1563#1564#0" expanded="true" />
-            <element signature="e#1595#1596#0" expanded="true" />
-            <element signature="e#1634#1635#0" expanded="true" />
-            <element signature="e#1669#1670#0" expanded="true" />
-            <element signature="e#1715#1716#0" expanded="true" />
-            <element signature="e#1743#1744#0" expanded="true" />
-            <element signature="e#1792#1793#0" expanded="true" />
-            <element signature="e#1823#1824#0" expanded="true" />
+            <element signature="e#1528#1529#0" expanded="true" />
+            <element signature="e#1732#1733#0" expanded="true" />
+            <element signature="e#1761#1762#0" expanded="true" />
           </folding>
         </state>
       </provider>

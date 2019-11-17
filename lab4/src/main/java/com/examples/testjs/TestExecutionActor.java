@@ -21,39 +21,41 @@ public class TestExecutionActor {
     private static final String EMPTY_CHECKER = "NOT READY YET";
 
 
-    private final int packageId;
-    private final String jsScript;
-    private final String functionName;
-    private final TestExecutionActor[] tests;
+    private final String expectedResult;
+    private final Object[] params;
+    private final String testName;
+    private String result;
+    private String checker;
 
     @JsonCreator
-    public TestExecutionActor(@JsonProperty(TEST_NAME) String packageId,
-                              @JsonProperty(EXPECTED_RESULT) String jsScript,
-                              @JsonProperty(FUNCTION_NAME) String functionName,
-                              @JsonProperty(TESTS) Test[] tests) {
-        this.packageId = Integer.parseInt(packageId);
-        this.jsScript = jsScript;
-        this.functionName = functionName;
-        this.tests = tests;
+    public TestExecutionActor(@JsonProperty(TEST_NAME) String testName,
+                              @JsonProperty(EXPECTED_RESULT) String expectedResult,
+                              @JsonProperty(PARAMS) Object[] params) {
+        this.testName = testName;
+        this.expectedResult = expectedResult;
+        this.params = params;
+        this.result = EMPTY_RESULT;
+        this.checker = EMPTY_CHECKER;
     }
 
-    public String getJsScript() {
-        return jsScript;
+    public static String getTestName() {
+        return TEST_NAME;
     }
 
-    public int getPackageId() {
-        return packageId;
+    public static String getExpectedResult() {
+        return EXPECTED_RESULT;
     }
 
-    public String getFunctionName() {
-        return functionName;
+
+    public Object[] getParams() {
+        return params;
     }
 
-    public TestExecutionActor[] getTests() {
-        return tests;
+    public String getResult() {
+        return result;
     }
 
-    public TestExecutionActor getTests(int i) {
-        return tests[i];
-    }
+    
+
+
 }
