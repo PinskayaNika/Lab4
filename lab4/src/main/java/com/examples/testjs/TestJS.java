@@ -1,6 +1,9 @@
 package com.examples.testjs;
 
+//- актор роутер
+//  инициализирует актор хранилище а также пул акторов исполнителей тестов
 import akka.Main;
+
 import akka.NotUsed;
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
@@ -17,9 +20,10 @@ import akka.pattern.Patterns;
 import akka.stream.ActorMaterializer;
 import akka.stream.javadsl.Flow;
 import org.omg.CORBA.TIMEOUT;
+import scala.concurrent.Future;
 
 import java.util.concurrent.CompletionStage;
-import java.util.concurrent.Future;
+//import java.util.concurrent.Future;
 
 public class TestJS extends AllDirectives {
     private static final String LOCALHOST = "localhost:";
