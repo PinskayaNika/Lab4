@@ -11,6 +11,7 @@ import akka.http.javadsl.ServerBinding;
 import akka.http.javadsl.marshallers.jackson.Jackson;
 import akka.http.javadsl.model.HttpRequest;
 import akka.http.javadsl.model.HttpResponse;
+import akka.http.javadsl.server.AllDirectives;
 import akka.http.javadsl.server.Route;
 import akka.pattern.Patterns;
 import akka.stream.ActorMaterializer;
@@ -20,7 +21,7 @@ import org.omg.CORBA.TIMEOUT;
 import java.util.concurrent.CompletionStage;
 import java.util.concurrent.Future;
 
-public class TestJS {
+public class TestJS extends AllDirectives {
     private static final String LOCALHOST = "localhost:";
     private static final String SERVER_INFO = "Server online at http://localhost:8080/\\nPress RETURN to stop...";
     private static final String PACKAGE_ID = "packageId";
@@ -69,7 +70,7 @@ public class TestJS {
     private Route jsTesterRoute() {
         return concat(
                 get(
-                        () -> parameter(PAKAGE_ID, (pachageId) ->
+                        () -> parameter(PACKAGE_ID, (pachageId) ->
                                 {
                                     Future<Object> result = Patterns.ask(mainActor,
                                             new MessageProcessingActor(Integer.parseInt(packageId)),
