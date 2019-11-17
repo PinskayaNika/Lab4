@@ -38,12 +38,12 @@ public class TestExecutionActor {
         this.checker = EMPTY_CHECKER;
     }
 
-    public static String getTestName() {
-        return TEST_NAME;
+    public String getTestName() {
+        return testName;
     }
 
-    public static String getExpectedResult() {
-        return EXPECTED_RESULT;
+    public String getExpectedResult() {
+        return expectedResult;
     }
 
 
@@ -55,7 +55,7 @@ public class TestExecutionActor {
         return result;
     }
 
-    
-
-
+    public String getChecker() {
+        return checker;
+    }
 }
