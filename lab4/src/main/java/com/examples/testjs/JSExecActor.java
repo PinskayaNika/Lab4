@@ -2,8 +2,9 @@ package com.examples.testjs;
 
 import akka.actor.AbstractActor;
 import akka.actor.ActorRef;
-import akka.japi.Pair;
+//import akka.japi.Pair;
 import akka.japi.pf.ReceiveBuilder;
+import javafx.util.Pair;
 
 import javax.script.Invocable;
 import javax.script.ScriptEngine;
