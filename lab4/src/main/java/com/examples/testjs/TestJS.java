@@ -84,7 +84,6 @@ public class TestJS extends AllDirectives {
                                 msg -> {
                                     mainActor.tell(msg, ActorRef.noSender());
                                     return complete(POST_MESSAGE);
-
                                 }
                         )
                 )
