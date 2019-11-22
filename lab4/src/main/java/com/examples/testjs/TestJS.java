@@ -28,6 +28,7 @@ import java.util.concurrent.CompletionStage;
 public class TestJS extends AllDirectives {
 
     static ActorRef mainActor;
+    private static final String ROUTES = "routes";
     private static final String LOCALHOST = "localhost:";
     private static final String SERVER_INFO = "Server online at http://localhost:8080/\\nPress RETURN to stop...";
     private static final String PACKAGE_ID = "packageId";
@@ -65,7 +66,7 @@ public class TestJS extends AllDirectives {
 
     public static void main(String[] args) throws Exception {
 
-        ActorSystem system = ActorSystem.create("routes");
+        ActorSystem system = ActorSystem.create(ROUTES);
         mainActor = system.actorOf(Props.create(MainActor.class));
 
         final Http http = Http.get(system);
