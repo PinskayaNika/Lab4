@@ -12,11 +12,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TestJS.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestJS.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/TestJS.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-299">
-              <caret line="64" selection-start-line="49" selection-start-column="8" selection-end-line="64" />
+              <caret line="64" selection-start-line="64" selection-end-line="64" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -48,11 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StorageResultsActor.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="StorageResultsActor.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/StorageResultsActor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="456">
+              <caret line="38" column="5" selection-start-line="14" selection-end-line="38" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -338,7 +338,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="11" y="49" width="1012" height="1129" extended-state="0" />
+    <frame x="11" y="49" width="1012" height="1129" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -861,16 +861,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/StorageResultsActor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/JSExecActor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="746">
@@ -933,7 +923,17 @@
     <entry file="file://$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/TestJS.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-299">
-          <caret line="64" selection-start-line="49" selection-start-column="8" selection-end-line="64" />
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/StorageResultsActor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="38" column="5" selection-start-line="14" selection-end-line="38" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
