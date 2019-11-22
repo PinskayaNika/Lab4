@@ -1,19 +1,19 @@
 package com.examples.testjs;
 
-public class StoreCommand {
+class StoreCommand {
     private final int packageId;
     private final StoreMessage storageMessage;
 
-    public StoreCommand(int index, StoreMessage storageMsg) {
+    StoreCommand(int index, StoreMessage storageMsg) {
         this.packageId =index;
         this.storageMessage = storageMsg;
     }
 
-    public int getPackageId() {
+    int getPackageId() {
         return packageId;
     }
 
-    public StoreMessage getStorageMessage() {
+    StoreMessage getStorageMessage() {
         return storageMessage;
     }
 }

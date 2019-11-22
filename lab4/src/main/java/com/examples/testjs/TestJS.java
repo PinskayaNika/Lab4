@@ -33,7 +33,7 @@ public class TestJS extends AllDirectives {
     private static final int SERVER_PORT = 8080;
     private static final int TIMEOUT_MILLIS = 5000;
 
-    static ActorRef mainActor;
+    private static ActorRef mainActor;
 
     public static void main(String[] args) throws Exception {
         //Инициализация сервера

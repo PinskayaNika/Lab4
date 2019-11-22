@@ -1,14 +1,5 @@
 package com.examples.testjs;
 
-//актор который исполняет один тест из пакета.
-//   Для исполнения JS кода можно воспользоваться следующим примером
-//ScriptEngine engine = new ScriptEngineManager().getEngineByName("nashorn");
-//engine.eval(jscript);
-//Invocable invocable = (Invocable) engine;
-//return invocable.invokeFunction(functionName, params).toString();
-
-//После исполнения теста результат передается актору хранилищу
-
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
@@ -38,16 +29,16 @@ public class TestExecutionActor {
         this.checker = EMPTY_CHECKER;
     }
 
-    public String getTestName() {
+    String getTestName() {
         return testName;
     }
 
-    public String getExpectedResult() {
+    String getExpectedResult() {
         return expectedResult;
     }
 
 
-    public Object[] getParams() {
+    Object[] getParams() {
         return params;
     }
 

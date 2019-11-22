@@ -26,19 +26,19 @@ public class FunctionPackage {
         this.tests = tests;
     }
 
-    public String getJsScript() {
+    String getJsScript() {
         return jsScript;
     }
 
-    public int getPackageId() {
+    int getPackageId() {
         return packageId;
     }
 
-    public String getFunctionName() {
+    String getFunctionName() {
         return functionName;
     }
 
-    public TestExecutionActor[] getTests() {
+    TestExecutionActor[] getTests() {
         return tests;
     }
 

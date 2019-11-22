@@ -2,14 +2,14 @@ package com.examples.testjs;
 
 import javafx.util.Pair;
 
-public class ExecuteMessage {
+class ExecuteMessage {
     private Pair<Integer, FunctionPackage> msg;
 
-    public ExecuteMessage(int a, FunctionPackage functionPackage) {
+    ExecuteMessage(int a, FunctionPackage functionPackage) {
         this.msg = new Pair<>(a, functionPackage);
-    }
+    }//После исполнения теста результат передается актору хранилищу
 
-    public Pair<Integer, FunctionPackage> getMsg() {
+    Pair<Integer, FunctionPackage> getMsg() {
         return this.msg;
     }
 }

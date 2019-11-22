@@ -7,8 +7,8 @@ public class StoreMessage {
     private final Object[] param;
     private final String testName;
 
-    public StoreMessage(String result, String expectedResult, String cheker,
-                        Object[] param, String testName) {
+    StoreMessage(String result, String expectedResult, String cheker,
+                 Object[] param, String testName) {
         this.result = result;
         this.expectedResult = expectedResult;
         this.cheker = cheker;
