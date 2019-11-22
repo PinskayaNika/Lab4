@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="372f0b7c-69d4-46ea-9b2b-bf00fca05f4b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/ExecuteMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/ExecuteMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/FunctionPackage.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/FunctionPackage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/JSExecActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/JSExecActor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/MessageProcessingActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/MessageProcessingActor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/StorageResultsActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/StorageResultsActor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/StoreCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/StoreCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/StoreMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/StoreMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/TestExecutionActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/TestExecutionActor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/TestJS.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/TestJS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/target/classes/com/examples/testjs/TestExecutionActor.class" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/target/classes/com/examples/testjs/TestExecutionActor.class" afterDir="false" />
-    </list>
+    <list default="true" id="372f0b7c-69d4-46ea-9b2b-bf00fca05f4b" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/lab4/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,11 +12,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TestJS.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TestJS.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/TestJS.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="63" column="26" lean-forward="true" selection-start-line="63" selection-start-column="26" selection-end-line="63" selection-end-column="26" />
+            <state relative-caret-position="798">
+              <caret line="51" selection-start-line="51" selection-end-line="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -72,7 +60,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestExecutionActor.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestExecutionActor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/TestExecutionActor.java">
           <provider selected="true" editor-type-id="text-editor">
             <state>
@@ -149,11 +137,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="916" />
-    <option name="y" value="72" />
-    <option name="width" value="1004" />
-    <option name="height" value="1124" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="11" />
+    <option name="y" value="49" />
+    <option name="width" value="1012" />
+    <option name="height" value="1129" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -329,21 +317,23 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="25" width="1922" height="1056" extended-state="6" />
+    <frame x="11" y="49" width="1012" height="1129" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.3291536" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.32983193" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32914045" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3057449" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12447917" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23663366" />
       <window_info id="Learn" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -357,7 +347,6 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.3972736" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.3291536" />
     </layout>
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -842,26 +831,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/TestJS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="63" column="26" lean-forward="true" selection-start-line="63" selection-start-column="26" selection-end-line="63" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/MainActor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/JSExecActor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1007">
@@ -898,6 +867,26 @@
             <element signature="e#1735#1736#0" expanded="true" />
             <element signature="e#1769#1770#0" expanded="true" />
             <element signature="e#1799#1800#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/MainActor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab4/src/main/java/com/examples/testjs/TestJS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
