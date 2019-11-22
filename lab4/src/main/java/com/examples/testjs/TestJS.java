@@ -26,6 +26,8 @@ import java.util.concurrent.CompletionStage;
 //import java.util.concurrent.Future;
 
 public class TestJS extends AllDirectives {
+
+    static ActorRef mainActor;
     private static final String LOCALHOST = "localhost:";
     private static final String SERVER_INFO = "Server online at http://localhost:8080/\\nPress RETURN to stop...";
     private static final String PACKAGE_ID = "packageId";
@@ -33,7 +35,7 @@ public class TestJS extends AllDirectives {
     private static final int SERVER_PORT = 8080;
     private static final int TIMEOUT_MILLIS = 5000;
 
-    static ActorRef mainActor;
+
 
     public static void main(String[] args) throws Exception {
         //Инициализация сервера
