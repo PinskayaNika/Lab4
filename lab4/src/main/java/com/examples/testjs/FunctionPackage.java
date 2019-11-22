@@ -75,7 +75,7 @@ public class FunctionPackage {
         this.tests = tests;
     }
 
-    public String getJSScript() {
+    public String getJsScript() {
         return jsScript;
     }
 
