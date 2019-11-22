@@ -28,7 +28,6 @@ import java.util.concurrent.CompletionStage;
 public class TestJS extends AllDirectives {
 
     static ActorRef mainActor;
-    private static final String ROUTES = "routes";
     private static final String LOCALHOST = "localhost:";
     private static final String SERVER_INFO = "Server online at http://localhost:8080/\\nPress RETURN to stop...";
     private static final String PACKAGE_ID = "packageId";
@@ -38,35 +37,9 @@ public class TestJS extends AllDirectives {
 
 
 
-//    public static void main(String[] args) throws Exception {
-//        //Инициализация сервера
-//        ActorSystem system = ActorSystem.create("routes");
-//        mainActor = system.actorOf(Props.create(MainActor.class));
-//
-//        final Http http = Http.get(system);
-//        final ActorMaterializer materializer = ActorMaterializer.create(system);
-//
-//        TestJS app = new TestJS();
-//
-//        final Flow<HttpRequest, HttpResponse, NotUsed> routeFlow =
-//                app.jsTesterRoute().flow(system, materializer);
-//        final CompletionStage<ServerBinding> binding = http.bindAndHandle(
-//                routeFlow,
-//                ConnectHttp.toHost(LOCALHOST, SERVER_PORT),
-//                materializer
-//        );
-//
-//        System.out.println(SERVER_INFO);
-//        System.in.read();
-//
-//        binding
-//                .thenCompose(ServerBinding::unbind)
-//                .thenAccept(unbound -> system.terminate());
-//
-
     public static void main(String[] args) throws Exception {
-
-        ActorSystem system = ActorSystem.create(ROUTES);
+        //Инициализация сервера
+        ActorSystem system = ActorSystem.create("routes");
         mainActor = system.actorOf(Props.create(MainActor.class));
 
         final Http http = Http.get(system);
@@ -100,7 +73,32 @@ public class TestJS extends AllDirectives {
     }
 
 
+//    private Route jsTesterRoute() {
+//        return concat(
+//                get(
+//                        () -> parameter(PACKAGE_ID, (packageId) ->
+//                                {
+//                                    Future<Object> result = Patterns.ask(mainActor,
+//                                            new MessageProcessingActor(Integer.parseInt(packageId)),
+//                                            TIMEOUT_MILLIS);
+//                                    return completeOKWithFuture(result, Jackson.marshaller());
+//                                }
+//                        )
+//                ),
+//                post(
+//                        () -> entity(Jackson.unmarshaller(FunctionPackage.class),
+//                                msg -> {
+//                                    mainActor.tell(msg, ActorRef.noSender());
+//                                    return complete(POST_MESSAGE);
+//                                }
+//                        )
+//                )
+//        );
+//
+//    }
+
     private Route jsTesterRoute() {
+
         return concat(
                 get(
                         () -> parameter(PACKAGE_ID, (packageId) ->
@@ -117,10 +115,8 @@ public class TestJS extends AllDirectives {
                                 msg -> {
                                     mainActor.tell(msg, ActorRef.noSender());
                                     return complete(POST_MESSAGE);
-                                }
-                        )
-                )
-        );
-
+                                })));
     }
+
+
 }
