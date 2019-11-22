@@ -37,8 +37,34 @@ public class TestJS extends AllDirectives {
 
 
 
+//    public static void main(String[] args) throws Exception {
+//        //Инициализация сервера
+//        ActorSystem system = ActorSystem.create("routes");
+//        mainActor = system.actorOf(Props.create(MainActor.class));
+//
+//        final Http http = Http.get(system);
+//        final ActorMaterializer materializer = ActorMaterializer.create(system);
+//
+//        TestJS app = new TestJS();
+//
+//        final Flow<HttpRequest, HttpResponse, NotUsed> routeFlow =
+//                app.jsTesterRoute().flow(system, materializer);
+//        final CompletionStage<ServerBinding> binding = http.bindAndHandle(
+//                routeFlow,
+//                ConnectHttp.toHost(LOCALHOST, SERVER_PORT),
+//                materializer
+//        );
+//
+//        System.out.println(SERVER_INFO);
+//        System.in.read();
+//
+//        binding
+//                .thenCompose(ServerBinding::unbind)
+//                .thenAccept(unbound -> system.terminate());
+//
+
     public static void main(String[] args) throws Exception {
-        //Инициализация сервера
+
         ActorSystem system = ActorSystem.create("routes");
         mainActor = system.actorOf(Props.create(MainActor.class));
 
