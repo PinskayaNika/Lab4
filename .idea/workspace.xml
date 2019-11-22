@@ -338,7 +338,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="11" y="49" width="1012" height="1129" extended-state="1" />
+    <frame x="11" y="49" width="1012" height="1129" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -349,11 +349,11 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.32983193" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32914045" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.46738073" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.46738073" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23663366" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23663366" />
       <window_info id="Learn" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
