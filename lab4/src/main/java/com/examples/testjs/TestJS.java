@@ -72,7 +72,7 @@ public class TestJS extends AllDirectives {
 //        System.out.println("");
     }
 
-
+//Создается временный Actor
     private Route jsTesterRoute() {
         return concat(
                 get(

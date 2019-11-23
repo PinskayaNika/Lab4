@@ -58,6 +58,8 @@ public class JSExecActor extends AbstractActor {
                     );
                     StoreCommand storeCommand = new StoreCommand(functionPackage.getPackageId(),
                             storeMessage);
+                    //указатель на Storage
+                    //получает ссылку на Actorа, который отправил сообщение.
                     getSender().tell(storeCommand, ActorRef.noSender());
                 }).build();
     }
