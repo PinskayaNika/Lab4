@@ -18,6 +18,7 @@ public class StoreMessage {
 
     public String getResult() {
         return result;
+
     }
 
     public String getExpectedResult() {
